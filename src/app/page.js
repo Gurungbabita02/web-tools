@@ -19,7 +19,7 @@ export default function AviatorPredictor() {
 
   const handleSubmit = async () => {
     if (values.length < 5) {
-      setError('❌ Please enter at least 5 crash values.');
+      setError(' Please enter at least 5 crash values.');
       return;
     }
     setloader(true)
