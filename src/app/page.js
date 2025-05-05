@@ -50,19 +50,19 @@ export default function AviatorPredictor() {
 
   return (
     <div className="container m-auto mt-10 h-full min-h-screen">
-      <div className='lg:w-[30%] mx-auto bg-amber-200 p-10 rounded-2xl'>
-
+      <div className='lg:w-[30%] sm:w-full sm:p-5 mx-auto bg-red-100 p-10 rounded-2xl'>
+    <h2 className='text-red-500 text-3xl font-medium text-center mb-6'>AI Aviator Predictor bot/robot for aviator Gaming</h2>
       <input
         type="text"
         placeholder="Enter crash values (e.g., 1.8,2.5,3.0,1.7,2.9)"
         value={inputText}
         onChange={handleInputChange}
-        className="w-full border p-2 rounded"
+        className="w-full border p-2 rounded border-gray-500 focus:border-blue-600 focus:outline-0"
       />
 
       <button
         onClick={handleSubmit}
-        className="mt-4 bg-red-400 text-white px-4 py-2 rounded"
+        className="mt-6 bg-red-400 cursor-pointer text-white px-4 py-2 rounded-full w-full hover:bg-white hover:border hover:border-solid hover:text-red-600 "
       >
         {loader?<div role="status">
     <svg aria-hidden="true" class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
