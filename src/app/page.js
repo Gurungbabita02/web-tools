@@ -47,7 +47,6 @@ export default function AviatorPredictor() {
       setloader(false)
     }
   };
-
   return (
     <div className="container m-auto mt-10 h-full min-h-screen">
       <div className='lg:w-[30%] sm:w-full sm:p-5 mx-auto bg-red-100 p-10 rounded-2xl'>
