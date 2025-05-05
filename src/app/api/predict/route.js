@@ -8,7 +8,7 @@ export async function POST(req) {
   }
 
   try {
-    const response = await axios.post('http://localhost:8000/predict', { last5 });
+    const response = await axios.post('https://python-ai-t9zt.onrender.com/predict', { last5 });
     return new Response(JSON.stringify(response.data), { status: 200 });
   } catch (err) {
     console.error('ML error:', err.message);

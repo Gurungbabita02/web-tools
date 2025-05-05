@@ -47,9 +47,9 @@ export default function AviatorPredictor() {
       setloader(false)
     }
   };
-  
+
   return (
-    <div className="container m-auto mt-10 h-full min-h-screen">
+    <div className="container m-auto mt-10 h-full min-h-screen flex justify-center items-center">
       <div className='lg:w-[30%] sm:w-full sm:p-5 mx-auto bg-red-100 p-10 rounded-2xl'>
     <h2 className='text-red-500 text-3xl font-medium text-center mb-6'>AI Aviator Predictor bot for aviator Gaming </h2>
       <input
