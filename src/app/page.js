@@ -50,7 +50,7 @@ export default function AviatorPredictor() {
   return (
     <div className="container m-auto mt-10 h-full min-h-screen">
       <div className='lg:w-[30%] sm:w-full sm:p-5 mx-auto bg-red-100 p-10 rounded-2xl'>
-    <h2 className='text-red-500 text-3xl font-medium text-center mb-6'>AI Aviator Predictor bot for aviator Gaming</h2>
+    <h2 className='text-red-500 text-3xl font-medium text-center mb-6'>AI Aviator Predictor bot for aviator Gaming </h2>
       <input
         type="text"
         placeholder="Enter crash values (e.g., 1.8,2.5,3.0,1.7,2.9)"
