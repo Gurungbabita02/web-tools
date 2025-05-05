@@ -16,7 +16,8 @@ export default function AviatorPredictor() {
 
     setValues(parsed);
   };
-
+let live_url="https://python-ai-t9zt.onrender.com/predict"
+let local_url=" http://localhost:8000/predict"
   const handleSubmit = async () => {
     if (values.length < 5) {
       setError(' Please enter at least 5 crash values.');
@@ -24,7 +25,7 @@ export default function AviatorPredictor() {
     }
     setloader(true)
     try {
-      const res = await fetch('/api/predict', {
+      const res = await fetch(`${live_url}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ last5: values }),
