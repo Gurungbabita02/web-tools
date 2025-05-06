@@ -54,7 +54,7 @@ let local_url=" http://localhost:8000/predict"
     <div className="container m-auto  h-full min-h-screen flex justify-center items-center">
       <div className='lg:w-[30%] sm:w-full sm:p-5 mx-auto bg-white border border-solid border-red-500 p-10 rounded-2xl'>
         <div className='flex justify-center'>
-          <Image src="/predictor-Aviator-icon.webp" alt="Aviator" height={100} width={100}/>
+          <Image src="/Predictor-Aviator-icon.webp" alt="Aviator" height={100} width={100}/>
         </div>
     <h2 className='text-red-500 text-3xl font-medium text-center mb-6'> Aviator Predictor  for aviator Gaming </h2>
       <input
