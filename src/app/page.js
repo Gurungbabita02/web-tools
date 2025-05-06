@@ -58,7 +58,7 @@ let local_url=" http://localhost:8000/predict"
         placeholder="Enter crash values (e.g., 1.8,2.5,3.0,1.7,2.9)"
         value={inputText}
         onChange={handleInputChange}
-        className="w-full border p-2 rounded border-gray-500 focus:border-blue-600 focus:outline-0"
+        className="w-full border p-2 rounded border-gray-500 text-black focus:border-red-600 focus:outline-0"
       />
 
       <button
