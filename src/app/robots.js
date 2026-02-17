@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = "https://yourwebsite.com"; // REPLACE with your actual domain
+  const baseUrl = "https://yourwebsite.com"; // REPLACE with your actual url domain
 
   return {
     rules: [
