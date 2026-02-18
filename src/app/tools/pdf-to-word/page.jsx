@@ -1,14 +1,8 @@
 "use client"
 import React, { useState } from 'react'
-import * as pdfjsLib from "pdfjs-dist";
 import { Document, Packer, Paragraph, TextRun } from "docx";
 import { saveAs } from "file-saver";
 import ConversionComp from '@/app/components/ConversionComp';
-
-
-import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
-
-pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 const Jpgtopdf = () => {
 
  const [file, setFile] = useState(null);
@@ -24,8 +18,9 @@ const Jpgtopdf = () => {
 
     try {
       // 1. Read PDF
+      const pdfjsLib = await import("pdfjs-dist/legacy/build/pdf.js");
+      pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
       const arrayBuffer = await file.arrayBuffer();
-      // pdfjsLib read/parse the pdf file
       const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
 
       // 2. Extract text from all pages

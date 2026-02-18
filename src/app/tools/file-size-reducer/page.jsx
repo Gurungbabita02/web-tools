@@ -46,7 +46,7 @@ const FileSizeReducerPage = () => {
 
       try {
         // Dynamically import to avoid SSR issues
-        const pdfjsLib = await import("pdfjs-dist/legacy/build/pdf.mjs");
+        const pdfjsLib = await import("pdfjs-dist/legacy/build/pdf.js");
         const { jsPDF } = await import("jspdf");
 
         pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
