@@ -5,7 +5,7 @@ import { Poppins } from "next/font/google";
 import Script from "next/script";
 import JsonLd from "./components/JsonLd";
 
-const SITE_URL = "https://yourwebsite.com"; // REPLACE with your actual domain
+const SITE_URL = "https://web-tool-tawny.vercel.app";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -29,13 +29,13 @@ export const metadata = {
     "free file converter",
     "qr code generator",
   ],
-  authors: [{ name: "SmallPDF Tools" }],
-  creator: "SmallPDF Tools",
+  authors: [{ name: "FileToolsPro" }],
+  creator: "FileToolsPro",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "SmallPDF Tools",
+    siteName: "FileToolsPro",
     title: "Free Online PDF & Image Tools - Compress, Convert, Merge",
     description:
       "Free online tools to compress PDF, convert PDF to Word, compress images & more. No signup. Fast & secure.",
@@ -44,7 +44,7 @@ export const metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "SmallPDF Tools - Free Online File Tools",
+        alt: "FileToolsPro - Free Online File Tools",
       },
     ],
   },
@@ -86,7 +86,7 @@ export default function RootLayout({ children }) {
         {/* Google AdSense - Replace ca-pub-XXXXXXXXXXXXXXXX with your actual publisher ID */}
         <Script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7641843461158094"
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
@@ -94,13 +94,13 @@ export default function RootLayout({ children }) {
           data={{
             "@context": "https://schema.org",
             "@type": "WebSite",
-            name: "SmallPDF Tools",
-            url: "https://yourwebsite.com",
+            name: "FileToolsPro",
+            url: "https://web-tool-tawny.vercel.app",
             description:
               "Free online tools to compress PDF, convert files, reduce image size & more.",
             potentialAction: {
               "@type": "SearchAction",
-              target: "https://yourwebsite.com/?q={search_term_string}",
+              target: "https://web-tool-tawny.vercel.app/?q={search_term_string}",
               "query-input": "required name=search_term_string",
             },
           }}
@@ -109,9 +109,9 @@ export default function RootLayout({ children }) {
           data={{
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "SmallPDF Tools",
-            url: "https://yourwebsite.com",
-            logo: "https://yourwebsite.com/og-image.png",
+            name: "FileToolsPro",
+            url: "https://web-tool-tawny.vercel.app",
+            logo: "https://web-tool-tawny.vercel.app/og-image.png",
             sameAs: [],
           }}
         />

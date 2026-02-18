@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://yourwebsite.com"; // REPLACE with your actual domain
+  const baseUrl = "https://web-tool-tawny.vercel.app";
 
   return [
     {
@@ -49,6 +49,18 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/tools/pdf-merge`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/tools/background-remover`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
   ];
 }

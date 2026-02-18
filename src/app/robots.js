@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = "https://yourwebsite.com"; // REPLACE with your actual url domain
+  const baseUrl = "https://web-tool-tawny.vercel.app";
 
   return {
     rules: [

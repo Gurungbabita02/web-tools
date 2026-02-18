@@ -18,9 +18,9 @@ const Footer = () => {
         <div>
           <h4 className="text-white font-semibold mb-3">Most Popular Tools</h4>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/tools/pdf-to-jpg" className="hover:text-white">PDF to JPG</Link></li>
-            <li><Link href="/tools/image-compressor" className="hover:text-white">Image Compressor</Link></li>
-            <li><Link href="/tools/jpg-to-pdf" className="hover:text-white">JPG to PDF</Link></li>
+            <li><Link href="/tools/pdf-to-word" className="hover:text-white">PDF to Word</Link></li>
+            <li><Link href="/tools/image-compress" className="hover:text-white">Image Compressor</Link></li>
+            <li><Link href="/tools/word-to-pdf" className="hover:text-white">Word to PDF</Link></li>
             <li><Link href="/tools/file-size-reducer" className="hover:text-white">File Size Reducer</Link></li>
           </ul>
         </div>
