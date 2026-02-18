@@ -2,7 +2,6 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import Script from "next/script";
 import JsonLd from "./components/JsonLd";
 
 const SITE_URL = "https://web-tool-tawny.vercel.app";
@@ -80,16 +79,16 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-       className={`${poppins.variable}`}
-      >
-        {/* Google AdSense - Replace ca-pub-XXXXXXXXXXXXXXXX with your actual publisher ID */}
-        <Script
+      <head>
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7641843461158094"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        ></script>
+      </head>
+      <body
+       className={`${poppins.variable}`}
+      >
         <JsonLd
           data={{
             "@context": "https://schema.org",
