@@ -63,7 +63,7 @@ const toolCategory=[
 
       {/* Ad after hero */}
       <div className="max-w-7xl mx-auto px-6">
-        <AdBanner adSlot="YOUR_AD_SLOT_1" />
+        {/* <AdBanner adSlot="YOUR_AD_SLOT_1" /> */}
       </div>
 
       {/* What is this */}
@@ -95,10 +95,10 @@ const toolCategory=[
 
       {/* Categories */}
       <section className="max-w-7xl mx-auto px-6 py-16" id="tools">
-        <h2 className="text-2xl font-bold mb-8 text-center">Tool Categories</h2>
+        <h2 className="text-2xl font-bold mb-8 text-center ">Tool Categories</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-center">
           {toolCategory?.map((c, i) => (
-            <div key={i} className={` text-indigo-700 py-4 rounded-xl font-medium   ${c.title === tab ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white" : "bg-indigo-50"}`} onClick={()=>{setTab(c.title)}}>
+            <div key={i} className={` text-indigo-700 py-4 rounded-xl font-medium cursor-pointer  ${c.title === tab ? "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white" : "bg-indigo-50"}`} onClick={()=>{setTab(c.title)}}>
               {c.name}
             </div>
           ))}
@@ -112,7 +112,7 @@ const toolCategory=[
           <a
             key={i}
             href={tool.link}
-            className={`group  rounded-2xl border-2 bg-white  ${i==0?" text-blue-500 hover:bg-[#f4f7ff]":i==1?" hover:bg-[#effbf2]  text-green-400":i==2?"bg-[#FFF2C1] text-yellow-500 hover:bg-[#fffcef]":i==3?"bg-[#E8E4FC] text-purple-500 hover:bg-[#F9D7D5]":"bg-[#F9D7D5] text-red-500"} p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition`}
+            className={`group  rounded-2xl border-2 bg-white  ${i==0?" text-blue-500 hover:bg-[#f4f7ff]":i==1?" hover:bg-[#effbf2]  text-green-400":i==2?"bg-[#FFF2C1] text-yellow-500 hover:bg-[#fffcef]":i==3?"bg-[#E8E4FC] text-purple-500 hover:bg-[#f2f2ff]":"bg-[#F9D7D5] text-red-500"} p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition`}
           >
             <div className={`w-14 h-14 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center rounded-full text-3xl mb-5 ${i==0?"bg-[#E6ECFF] text-blue-500":i==1?"bg-[#DDFFE5] text-green-400":i==2?"bg-[#FFF2C1] text-yellow-500":i==3?"bg-[#E8E4FC] text-purple-500":"bg-[#F9D7D5] text-red-500"}`}>
               {tool.icon}
@@ -126,7 +126,7 @@ const toolCategory=[
 
       {/* Ad before CTA */}
       <div className="max-w-7xl mx-auto px-6">
-        <AdBanner adSlot="YOUR_AD_SLOT_2" />
+        {/* <AdBanner adSlot="YOUR_AD_SLOT_2" /> */}
       </div>
 
       {/* CTA */}

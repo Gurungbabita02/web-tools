@@ -53,7 +53,7 @@ const [compresed,setCompressed]=useState("")
     <ConversionComp title={"Compress Size Of Image"} data={data} accept={"image/*"} input={input} onchange={handleImage}/>
 
     {/* Ad after upload */}
-    <AdBanner adSlot="YOUR_AD_SLOT_5" />
+    {/* <AdBanner adSlot="YOUR_AD_SLOT_5" /> */}
    
   
      {compresed!=="" && (
@@ -101,7 +101,7 @@ const [compresed,setCompressed]=useState("")
     />
 
     {/* Ad at bottom */}
-    <AdBanner adSlot="YOUR_AD_SLOT_6" />
+    {/* <AdBanner adSlot="YOUR_AD_SLOT_6" /> */}
     </div>
   )
 }

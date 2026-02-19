@@ -1,6 +1,10 @@
 module.exports = {
   theme: {
     extend: {
+      screens: {
+      xs: {'min': '320px', 'max': '767px'},
+
+      },
       boxShadow: {
         custom_shadow: '5px 5px 15px #e3e3e3',
       },

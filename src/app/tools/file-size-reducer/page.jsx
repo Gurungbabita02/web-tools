@@ -158,7 +158,7 @@ const FileSizeReducerPage = () => {
       />
 
       {/* Ad after upload */}
-      <AdBanner adSlot="YOUR_AD_SLOT_3" />
+      {/* <AdBanner adSlot="YOUR_AD_SLOT_3" /> */}
 
       {/* Validation Error */}
       {errorMsg && (
@@ -271,7 +271,7 @@ const FileSizeReducerPage = () => {
       />
 
       {/* Ad at bottom */}
-      <AdBanner adSlot="YOUR_AD_SLOT_4" />
+      {/* <AdBanner adSlot="YOUR_AD_SLOT_4" /> */}
     </div>
   );
 };
