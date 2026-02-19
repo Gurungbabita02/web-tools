@@ -68,6 +68,9 @@ export const metadata = {
   alternates: {
     canonical: SITE_URL,
   },
+  verification: {
+    google: "x4Tfa1Gu7r9MB0B8mGj1cw9AdjKObLd-eEbg_R_JNNA",
+  },
 };
 
 const poppins = Poppins({
